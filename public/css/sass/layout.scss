@@ -76,7 +76,7 @@ body {
 
 .c-purple-plant {
     width: 270px;
-    bottom: 7px;
+    bottom: 0px;
     right: -44px;
 }
 
@@ -130,7 +130,7 @@ body {
     }
 
     .s-container {
-        padding: 60px 85px 40px;
+        padding: 10px 85px 0px;
         flex-direction: row;
     }
 
@@ -158,6 +158,9 @@ body {
         display: block;
         width: 100vw;
         height: 100vh;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 
     .c-bubbles { right: 100px; }
