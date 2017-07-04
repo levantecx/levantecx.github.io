@@ -181,7 +181,8 @@ body {
   .c-fish {
     position: absolute;
     top: 380px;
-    right: 250px; } }
+    right: 250px;
+    width: 94px; } }
 @media (min-width: 600px) and (max-width: 768px) {
   .s-container {
     padding: 40px 50px 40px;
