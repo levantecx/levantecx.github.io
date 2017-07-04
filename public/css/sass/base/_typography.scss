@@ -1,0 +1,47 @@
+html {
+    position: relative;
+    min-height: 100%;
+
+    * { box-sizing: border-box; }
+}
+
+body {
+    font-family: $ff-text;
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+}
+
+p {
+    font-family: $ff-text;
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+
+    color: #fff;
+    border-bottom: 1px solid currentColor;
+    transition: color 0.35s ease;
+
+    &:hover { color: #C01871; }
+}
+
+@media (min-width: 769px) {
+    p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+}

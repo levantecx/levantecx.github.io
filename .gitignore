@@ -1,0 +1,13 @@
+.tmp
+*.log
+Thumbs.db
+.DS_Store
+.~lock*
+*.lock
+.sass-cache
+!.keep
+vendor
+!public/css/sass/vendor/
+!public/js/vendor/
+*.orig
+*.exe
