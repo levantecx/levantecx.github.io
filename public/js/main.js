@@ -2,6 +2,11 @@ let orangePlant = null;
 let purplePlant = null;
 let bubbles = null;
 let fish = null;
+const facebookLink = document.querySelector('.js-facebook-link');
+const instagramLink = document.querySelector('.js-instagram-link');
+const emailLink = document.querySelector('.js-email-link');
+const ml127Link = document.querySelector('.js-127ml-link');
+const i42Link = document.querySelector('.js-42i-link');
 
 function moveFloatElsDesktop( e ) {
     orangePlant = document.querySelector('.c-float-els__desktop .c-orange-plant');
@@ -79,3 +84,33 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/))
 } else {
    document.onmousemove = moveFloatElsDesktop;
 }
+
+function handleOutboundLinkClicksFacebook(event) {
+  ga('send', 'event', 'Link', 'click', 'Site levante, click no link do facebook');
+}
+
+facebookLink.addEventListener("click", handleOutboundLinkClicksFacebook);
+
+function handleOutboundLinkClicksInstagram(event) {
+  ga('send', 'event', 'Link', 'click', 'Site levante, click no link do instagram');
+}
+
+instagramLink.addEventListener("click", handleOutboundLinkClicksInstagram);
+
+function handleOutboundLinkClicksEmail(event) {
+  ga('send', 'event', 'Link', 'click', 'Site levante, click no link de email');
+}
+
+emailLink.addEventListener("click", handleOutboundLinkClicksEmail);
+
+function handleOutboundLinkClicks127ml(event) {
+  ga('send', 'event', 'Link', 'click', 'Site levante, click no link da 127ml');
+}
+
+ml127Link.addEventListener("click", handleOutboundLinkClicks127ml);
+
+function handleOutboundLinkClicks42i(event) {
+  ga('send', 'event', 'Link', 'click', 'Site levante, click no link da 42i');
+}
+
+i42Link.addEventListener("click", handleOutboundLinkClicks42i);
