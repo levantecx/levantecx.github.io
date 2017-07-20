@@ -82,35 +82,35 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/))
         }, true);
     }
 } else {
-   document.onmousemove = moveFloatElsDesktop;
+    document.onmousemove = moveFloatElsDesktop;
 }
 
 function handleOutboundLinkClicksFacebook(event) {
-  ga('send', 'event', 'Link', 'click', 'Site levante, click no link do facebook');
+    ga('send', 'event', 'Link', 'click', 'Site levante, click no link do facebook');
 }
 
 facebookLink.addEventListener("click", handleOutboundLinkClicksFacebook);
 
 function handleOutboundLinkClicksInstagram(event) {
-  ga('send', 'event', 'Link', 'click', 'Site levante, click no link do instagram');
+    ga('send', 'event', 'Link', 'click', 'Site levante, click no link do instagram');
 }
 
 instagramLink.addEventListener("click", handleOutboundLinkClicksInstagram);
 
 function handleOutboundLinkClicksEmail(event) {
-  ga('send', 'event', 'Link', 'click', 'Site levante, click no link de email');
+    ga('send', 'event', 'Link', 'click', 'Site levante, click no link de email');
 }
 
 emailLink.addEventListener("click", handleOutboundLinkClicksEmail);
 
 function handleOutboundLinkClicks127ml(event) {
-  ga('send', 'event', 'Link', 'click', 'Site levante, click no link da 127ml');
+    ga('send', 'event', 'Link', 'click', 'Site levante, click no link da 127ml');
 }
 
 ml127Link.addEventListener("click", handleOutboundLinkClicks127ml);
 
 function handleOutboundLinkClicks42i(event) {
-  ga('send', 'event', 'Link', 'click', 'Site levante, click no link da 42i');
+    ga('send', 'event', 'Link', 'click', 'Site levante, click no link da 42i');
 }
 
 i42Link.addEventListener("click", handleOutboundLinkClicks42i);
